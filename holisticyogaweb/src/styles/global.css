@@ -1,0 +1,132 @@
+/* Global Typography with Kerning */
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global font kerning and text rendering optimization */
+html {
+  /* Enable kerning for all text */
+  font-kerning: normal;
+  /* Optimize text rendering */
+  text-rendering: optimizeLegibility;
+  /* Enable OpenType features */
+  font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
+  /* Smooth font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  /* Inherit kerning from html */
+  font-kerning: inherit;
+  text-rendering: inherit;
+  font-feature-settings: inherit;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  line-height: 1.5;
+}
+
+/* Apply kerning to all text elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+a,
+button,
+input,
+textarea,
+label {
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* Specific heading optimizations */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Enhanced kerning for headings */
+  font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "swsh" 1;
+  /* Better letter spacing control */
+  font-variant-ligatures: common-ligatures contextual;
+}
+
+/* Button text optimization */
+button {
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* Input and form elements */
+input,
+textarea,
+select {
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+}
+
+/* Utility classes for specific kerning control */
+.kerning-auto {
+  font-kerning: auto;
+}
+
+.kerning-normal {
+  font-kerning: normal;
+}
+
+.kerning-none {
+  font-kerning: none;
+}
+
+/* Text rendering utilities */
+.text-render-optimize {
+  text-rendering: optimizeLegibility;
+}
+
+.text-render-speed {
+  text-rendering: optimizeSpeed;
+}
+
+.text-render-precision {
+  text-rendering: geometricPrecision;
+}
+
+/* Advanced typography features */
+.advanced-typography {
+  font-feature-settings: "kern" 1, /* Kerning */ "liga" 1,
+    /* Standard ligatures */ "clig" 1, /* Contextual ligatures */ "calt" 1,
+    /* Contextual alternates */ "swsh" 1, /* Swashes */ "hist" 1; /* Historical forms */
+}
+
+/* Disable kerning for code/monospace */
+code,
+pre,
+.monospace {
+  font-kerning: none;
+  font-feature-settings: normal;
+  text-rendering: optimizeSpeed;
+}
+
+/* Responsive font smoothing */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

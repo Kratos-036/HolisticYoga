@@ -1,0 +1,75 @@
+/* src/components/ui/Button.module.css */
+.button {
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block; /* 🔁 Changed from inline-flex */
+  transition: background 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+
+/* 🔳 Navbar Button */
+.navbar {
+  width: auto; /* updated from 115px */
+  height: 31px;
+  padding: 6px 16px 8px 16px;
+
+  background-color: #000;
+  color: white;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  border-radius: 100px;
+}
+
+/* 🟩 Hero CTA Button */
+.cta {
+  width: 403px;
+  height: 72px;
+  padding: 14px 14px 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  background-color: rgba(255, 255, 255, 0.7); /* #FFFFFFB2 */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+
+  border-radius: 100px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.primary {
+  background: black;
+  color: white;
+}
+
+.primary:hover {
+  background: #222;
+}
+
+.secondary {
+  background: white;
+  color: black;
+}
+
+.secondary:hover {
+  background: #ddd;
+}

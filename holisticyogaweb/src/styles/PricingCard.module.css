@@ -1,0 +1,75 @@
+.card {
+  width: 403px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 14px 14px 24px;
+  border-radius: 100px;
+
+  background-color: rgba(255, 255, 255, 0.6); /* #FFFFFFB2 */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.textContainer {
+  flex: 1; /* ✅ Let it grow instead of fixed width */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.price {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.32px;
+  color: #000;
+  text-align: left;
+}
+
+.description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+  color: #000;
+  text-align: left;
+}
+
+.bookButton {
+  width: 83px;
+  height: 44px;
+  padding: 6px 24px 8px 24px;
+  border-radius: 100px;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.32px; /* ✅ Replaces invalid -2% */
+  color: white;
+
+  transition: all 0.2s ease;
+}
+
+.bookButton:hover {
+  background-color: #333;
+  transform: translateY(-1px);
+}
+
+.bookButton:active {
+  transform: translateY(0);
+}
