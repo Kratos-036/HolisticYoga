@@ -13,8 +13,10 @@ interface ButtonProps {
 const variantClasses: Record<string, string> = {
   navbar:
     'w-[115px] h-[31px] px-[16px] pt-[6px] pb-[8px] rounded-[100px] bg-black text-white text-[14px] font-normal leading-[100%] tracking-[-0.02em] font-["Inter_Display"] flex items-center justify-center',
-  cta:
-    'w-[403px] h-[72px] px-[24px] py-[14px] pr-[14px] bg-white/70 backdrop-blur-md text-black text-[16px] font-medium leading-[100%] tracking-[-0.02em] flex items-center gap-4 rounded-full whitespace-nowrap overflow-hidden text-ellipsis',
+    cta:
+    'w-[83px] h-[44px] px-[24px] pt-[6px] pb-[8px] rounded-[100px] bg-black text-white text-[16px] font-normal leading-[100%] tracking-[-0.02em] font-["Inter_Display"] flex items-center justify-center transition-all duration-200 hover:bg-[#333] active:translate-y-0 hover:-translate-y-[1px]',
+  
+  
   primary:
     'px-6 py-3 bg-black text-white font-medium rounded-full hover:bg-neutral-800',
   secondary:

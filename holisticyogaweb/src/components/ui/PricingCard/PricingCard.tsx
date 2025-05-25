@@ -1,3 +1,4 @@
+import Button from '../Button/Button';
 import styles from './PricingCard.module.css';
 
 interface PricingCardProps {
@@ -7,9 +8,9 @@ interface PricingCardProps {
 }
 
 const PricingCard = ({ 
-  price = "Per session ₹5000", 
-  description = "book your slots now & feel the change",
-  buttonText = "Book"
+  price = "", 
+  description = "",
+  buttonText = ""
 }: PricingCardProps) => {
   return (
     <div className={styles.card}>
@@ -17,9 +18,10 @@ const PricingCard = ({
         <div className={styles.price}>{price}</div>
         <div className={styles.description}>{description}</div>
       </div>
-      <button className={styles.bookButton}>
-        {buttonText}
-      </button>
+      <Button
+        label={buttonText}
+        variant="cta"
+      />
     </div>
   );
 };
