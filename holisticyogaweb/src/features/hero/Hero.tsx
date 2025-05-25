@@ -4,6 +4,12 @@ import PricingCard from '../../components/ui/PricingCard/PricingCard';
 import NavbarLogo from '../../components/ui/NavbarLogo/NavbarLogo';
 
 const Hero = () => {
+  const handleBookSlot = () => {
+    console.log('Book your slot clicked - handler working!');
+   // alert('Button clicked!'); // This will help us see if the click is working
+  };
+
+
   return (
     <section className={styles.hero}>
       <img
@@ -15,7 +21,11 @@ const Hero = () => {
       <div className={styles.overlay}>
         <header className={styles.header}>
           <span><NavbarLogo /></span>
-          <Button label="Book your slot" variant="navbar" />
+          <Button 
+            label="Book your slot" 
+            variant="navbar"
+            onClick={handleBookSlot}
+          />
         </header>
 
         <main className={styles.content}>
