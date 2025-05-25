@@ -1,4 +1,4 @@
-import styles from '../../styles/PricingCard.module.css';
+import styles from './PricingCard.module.css';
 
 interface PricingCardProps {
   price: string;

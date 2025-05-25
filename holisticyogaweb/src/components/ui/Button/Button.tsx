@@ -1,5 +1,5 @@
 // src/components/ui/Button.tsx
-import styles from '../../styles/Button.module.css';
+import styles from './Button.module.css';
 interface ButtonProps {
   label: string;
   variant?: 'navbar' | 'cta';

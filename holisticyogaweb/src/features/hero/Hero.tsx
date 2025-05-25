@@ -1,7 +1,7 @@
-import styles from '../styles/Hero.module.css';
-import Button from '../components/ui/Button';
-import PricingCard from '../components/ui/PricingCard';
-import NavbarLogo from '../components/ui/NavbarLogo';
+import styles from './Hero.module.css';
+import Button from '../../components/ui/Button/Button';
+import PricingCard from '../../components/ui/PricingCard/PricingCard';
+import NavbarLogo from '../../components/ui/NavbarLogo/NavbarLogo';
 
 const Hero = () => {
   return (
