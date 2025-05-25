@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 161px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .logoImage {
+    width: 37px;
+    height: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 425px) {
+  .logoImage {
+    width: 37px;
+    height: 20px;
+  }
+}
