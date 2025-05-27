@@ -2,7 +2,7 @@
 
 .hero {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
   left: 50%;
   right: 50%;
@@ -54,7 +54,7 @@
 
 .content {
   position: absolute;
-  bottom: 120px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -102,12 +102,23 @@
   width: 100%;
   margin-bottom: 8px;
 }
+.content p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+  margin: 0;
+  max-width: 672px;
+  width: 100%;
+  margin-bottom: 8px;
+}
 
 /* === Tablet (768px–1024px) === */
 
 @media (max-width: 1024px) {
   .hero {
-    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   .header {
@@ -154,13 +165,14 @@
   }
 
   .content {
-    bottom: 24px;
-    gap: 16px;
+    bottom: 0px; /* Position content to end exactly where PricingCard begins */
+    gap: 46px;
+    /* Remove padding-bottom - let PricingCard be in normal flow */
   }
 
   .content h1 {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 40px;
+    line-height: 120%;
   }
 
   .content p {

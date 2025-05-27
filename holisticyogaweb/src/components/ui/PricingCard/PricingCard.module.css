@@ -75,31 +75,26 @@
 }
 
 @media (max-width: 425px) {
-.card {
-  width: 100vw;            /* Edge-to-edge full width */
-  height: 81px;
-  padding: 14px 16px;      /* Keep your Figma internal padding */
-  gap: 16px;
-  border-radius: 0;        /* No border radius! */
-  background: rgba(255,255,255,0.7);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0;               /* No margin! */
-  position: fixed;         /* Attach to viewport bottom */
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;             /* Make sure it’s on top */
-}
+  .card {
+    width: 100vw;
+    height: 81px;
+    padding: 12px 24px;
+    gap: 16px;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
 
   .textContainer {
     width: 201px;
     height: 53px;
-    gap: 2px;
+    gap: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,8 +122,6 @@
   }
 
   .bookButton {
-    width: 71px !important;
-    height: 43px !important;
     padding: 12px 20px 14px 20px !important;
     border-radius: 100px;
     background: #000;
